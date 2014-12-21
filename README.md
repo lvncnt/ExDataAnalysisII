@@ -81,6 +81,8 @@ plot(aggregate,
 axis(1, at = seq(1999, 2008, by = 3), las = 1)
 ```
 
+[[./plot1.png]]
+
 **Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?**
 
 The total emissions from PM2.5 have decreased in the United States from 1999 to 2008. 
