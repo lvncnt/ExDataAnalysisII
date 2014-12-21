@@ -40,15 +40,15 @@ The overall goal of this assignment is to explore the National Emissions Invento
 
 ## Preparing the Data Set 
 
-```{r setup,echo=FALSE}
-if(!file.exists("./data")){
-        dir.create("./data")
-}
-fileUrl = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
-destfile="./data/exdata_data_NEI_data.zip"
-download.file(fileUrl, destfile, method ="auto")
-unzip(destfile, overwrite = T, exdir = "./data")
-```
+        ```{r setup,echo=FALSE}
+        if(!file.exists("./data")){
+                dir.create("./data")
+        }
+        fileUrl = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
+        destfile="./data/exdata_data_NEI_data.zip"
+        download.file(fileUrl, destfile, method ="auto")
+        unzip(destfile, overwrite = T, exdir = "./data")
+        ```
 
 Now load the .rds files using the `readRDS()` function: 
 
@@ -111,7 +111,7 @@ axis(1, at = seq(1999, 2008, by = 3), las = 1)
 
 *Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? 
 
-        Overall the total emissions from PM2.5 have decreased in the Baltimore City, Maryland from 1999 to 2008, though there was an increase of PM2.5 between the year 2002 and 2005. 
+Overall the total emissions from PM2.5 have decreased in the Baltimore City, Maryland from 1999 to 2008, though there was an increase of PM2.5 between the year 2002 and 2005. 
 
 ### Question 3
 
