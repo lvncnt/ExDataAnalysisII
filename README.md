@@ -109,9 +109,9 @@ axis(1, at = seq(1999, 2008, by = 3), las = 1)
 
 ![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot2.png)
 
-**Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008?**
+*Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? 
 
-Overall the total emissions from PM2.5 have decreased in the Baltimore City, Maryland from 1999 to 2008, though there was an increase of PM2.5 between the year 2002 and 2005. 
+        Overall the total emissions from PM2.5 have decreased in the Baltimore City, Maryland from 1999 to 2008, though there was an increase of PM2.5 between the year 2002 and 2005. 
 
 ### Question 3
 
