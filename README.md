@@ -50,7 +50,7 @@ download.file(fileUrl, destfile, method ="auto")
 unzip(destfile, overwrite = T, exdir = "./data")
 ```
 
-Next load .rds files using the `readRDS()` function 
+Now load the .rds files using the `readRDS()` function: 
 
 ```{r data, cache=TRUE}
 NEI = readRDS("summarySCC_PM25.rds")
@@ -70,23 +70,15 @@ library(plyr)
 aggregate = with(NEI, aggregate(Emissions, by = list(year), sum))
 ```
 
-Using the base plotting system, now we plot the total PM2.5 Emission from all sources,
+Using the base plotting system to plot the total PM2.5 Emission from all sources: 
 
 ```{r plot1}
 plot(aggregate, 
-        type = 'b', col = 'red', 
-        xlab = 'Year', ylab = 'Total PM2.5 emissions', 
-        main = 'Total PM2.5 emissions in the US (1999-2008)', 
-        xaxt="n")
+    type = 'b', col = 'red', 
+    xlab = 'Year', ylab = 'Total PM2.5 emissions', 
+    main = 'Total PM2.5 emissions in the US (1999-2008)', 
+    xaxt="n")
 axis(1, at = seq(1999, 2008, by = 3), las = 1)
-
-barplot(
-  (aggTotals$Emissions)/10^6,
-  names.arg=aggTotals$year,
-  xlab="Year",
-  ylab="PM2.5 Emissions (10^6 Tons)",
-  main="Total PM2.5 Emissions From All US Sources"
-)
 ```
 
 **Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?**
