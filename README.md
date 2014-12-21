@@ -83,8 +83,6 @@ axis(1, at = seq(1999, 2008, by = 3), las = 1)
 
 ![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot1.png)
 
-[[./plot1.png]]
-
 **Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?**
 
 The total emissions from PM2.5 have decreased in the United States from 1999 to 2008. 
@@ -108,6 +106,8 @@ plot(aggregate_BC,
     xaxt="n")
 axis(1, at = seq(1999, 2008, by = 3), las = 1)
 ```
+
+![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot2.png)
 
 **Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008?**
 
@@ -135,6 +135,7 @@ gg2 + theme(legend.title = element_text(colour="chocolate", size=12, face="bold"
 dev.copy(png, file = 'plot3.png', width = 480, height = 480)
 dev.off()
 ```
+![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot3.png)
 
 **Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008?**
 
@@ -166,6 +167,8 @@ dev.copy(png, file = 'plot4.png', width = 480, height = 480)
 dev.off()
 ```
 
+![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot4.png)
+
 **Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?**
 
 The overall trend was decreasing from 1999 to 2008, although there was a slight increase between 2002 and 2005.
@@ -195,6 +198,8 @@ axis(1, at = seq(1999, 2008, by = 3), las = 1)
 dev.copy(png, file = 'plot5.png', width = 480, height = 480)
 dev.off()
 ```
+
+![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot5.png) 
 
 **How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?**
 
@@ -238,6 +243,7 @@ gg2 + theme(legend.title = element_text(colour="chocolate", size=12, face="bold"
 dev.copy(png, file = 'plot6.png', width = 480, height = 480)
 dev.off()
 ```
+![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot6.png)
 
 **Which city has seen greater changes over time in motor vehicle emissions?**
 
