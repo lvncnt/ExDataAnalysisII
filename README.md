@@ -40,15 +40,15 @@ The overall goal of this assignment is to explore the National Emissions Invento
 
 ## Preparing the Data Set 
 
-        ```{r setup,echo=FALSE}
-        if(!file.exists("./data")){
-                dir.create("./data")
-        }
-        fileUrl = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
-        destfile="./data/exdata_data_NEI_data.zip"
-        download.file(fileUrl, destfile, method ="auto")
-        unzip(destfile, overwrite = T, exdir = "./data")
-        ```
+ ```{r setup,echo=FALSE}
+if(!file.exists("./data")){
+        dir.create("./data")
+}
+fileUrl = "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
+destfile="./data/exdata_data_NEI_data.zip"
+download.file(fileUrl, destfile, method ="auto")
+unzip(destfile, overwrite = T, exdir = "./data")
+```
 
 Now load the .rds files using the `readRDS()` function: 
 
@@ -109,7 +109,7 @@ axis(1, at = seq(1999, 2008, by = 3), las = 1)
 
 ![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot2.png)
 
-*Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? 
+* Have total emissions from PM2.5 decreased in the Baltimore City, Maryland (fips == "24510") from 1999 to 2008? 
 
 Overall the total emissions from PM2.5 have decreased in the Baltimore City, Maryland from 1999 to 2008, though there was an increase of PM2.5 between the year 2002 and 2005. 
 
@@ -137,7 +137,7 @@ dev.off()
 ```
 ![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot3.png)
 
-**Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008?**
+* Of the four types of sources indicated by the type (point, nonpoint, onroad, nonroad) variable, which of these four sources have seen decreases in emissions from 1999–2008 for Baltimore City? Which have seen increases in emissions from 1999–2008?
 
 The `non-road`, `nonpoint`, `on-road` source types have seen decreased emissions overall from 1999-2008 for Baltimore City. The `point` source was seen an increase overall from 1999-2008. 
 
@@ -169,7 +169,7 @@ dev.off()
 
 ![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot4.png)
 
-**Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?**
+* Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008? 
 
 The overall trend was decreasing from 1999 to 2008, although there was a slight increase between 2002 and 2005.
 
@@ -201,7 +201,7 @@ dev.off()
 
 ![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot5.png) 
 
-**How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?**
+* How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City? 
 
 Emissions from motor vehicle sources in Baltimore City steeply decreased from 1999 to 2005 and then undergone slight decrease between 2002 - 2005 and a further decrease from 2005 - 2008.
 
@@ -245,6 +245,6 @@ dev.off()
 ```
 ![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot6.png)
 
-**Which city has seen greater changes over time in motor vehicle emissions?**
+* Which city has seen greater changes over time in motor vehicle emissions? 
 
 Emissions from motor vehicle sources in Baltimore City continuously decreased from 1999 to 2008 by 75 percent whereas emissions from motor vehicle sources since 1999 in Los Angeles County undergone slight changes relative to 1999. So Baltimore City has seen greater changes over time in motor vehicle emissions. 
