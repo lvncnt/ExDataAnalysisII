@@ -81,6 +81,8 @@ plot(aggregate,
 axis(1, at = seq(1999, 2008, by = 3), las = 1)
 ```
 
+![alt tag](https://github.com/lvncnt/ExDataAnalysisII/blob/master/plot1.png)
+
 [[./plot1.png]]
 
 **Have total emissions from PM2.5 decreased in the United States from 1999 to 2008?**
