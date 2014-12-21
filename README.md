@@ -38,7 +38,7 @@ Source Classification Code Table (`Source_Classification_Code.rds`): This table 
 
 The overall goal of this assignment is to explore the National Emissions Inventory database and see what it say about fine particulate matter pollution in the United states over the 10-year period 1999–2008. You may use any R package you want to support your analysis.
 
-## Downloading the Data Set 
+## Preparing the Data Set 
 
 ```{r setup,echo=FALSE}
 if(!file.exists("./data")){
@@ -50,11 +50,11 @@ download.file(fileUrl, destfile, method ="auto")
 unzip(destfile, overwrite = T, exdir = "./data")
 ```
 
-We now load the NEI and SCC data frames from the .rds files.
+Next load .rds files using the `readRDS()` function 
 
 ```{r data, cache=TRUE}
-NEI <- readRDS("summarySCC_PM25.rds")
-SCC <- readRDS("Source_Classification_Code.rds")
+NEI = readRDS("summarySCC_PM25.rds")
+SCC = readRDS("Source_Classification_Code.rds")
 ```
 
 ## Questions
