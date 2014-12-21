@@ -73,6 +73,13 @@ aggregate = with(NEI, aggregate(Emissions, by = list(year), sum))
 Using the base plotting system, now we plot the total PM2.5 Emission from all sources,
 
 ```{r plot1}
+plot(aggregate, 
+        type = 'b', col = 'red', 
+        xlab = 'Year', ylab = 'Total PM2.5 emissions', 
+        main = 'Total PM2.5 emissions in the US (1999-2008)', 
+        xaxt="n")
+axis(1, at = seq(1999, 2008, by = 3), las = 1)
+
 barplot(
   (aggTotals$Emissions)/10^6,
   names.arg=aggTotals$year,
